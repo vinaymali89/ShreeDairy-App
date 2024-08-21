@@ -1,0 +1,96 @@
+<nav class="main-nav">
+    <div class="nav-menu">
+        <div class="menu-f1">
+            <div class="menu-btn">
+                <img src="assets/filelogo.png" alt="jklk">
+            </div>
+        </div>
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <li>
+                <div>
+                    <mat-icon>search</mat-icon>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <mat-icon>person</mat-icon>
+                </div>
+            </li>
+            <li class="mobile-menu-btn">
+                <div (click)="toggleMenu()">
+                    <mat-icon>menu</mat-icon>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <nav class="main-nav-second">
+        <div class="nav-second">
+            <div style="width: 100%;">
+                <ul class="nav-grid">
+                    <li>
+                        <a (click)="gotoHome()" class="pd-text-green">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="gotoProducts()" class="">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="gotoAbout()" class="pd-text-green">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="gotoContact()" class="pd-text-green">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+
+
+    <div class="side-menu"  *ngIf="menuOpen === true">
+        <div class="side-menu-header">
+            <button class="close-btn" (click)="toggleMenu()">
+                <mat-icon>highlight_off</mat-icon>
+            </button>
+        </div>
+        <ul>
+            <li>
+                <div>
+                    <span>Home</span>
+                </div>
+            </li>
+            <hr />
+            <li >
+                <div>
+                     <span>Products</span>
+                </div>
+            </li>
+            <hr />
+            <li>
+                <div>
+                    <span>About As</span>
+                </div>
+            </li>
+            <hr />
+            <li>
+                <div>
+                    <span>Contanct As</span>
+                </div>
+            </li>
+            <hr />
+            <li>
+                <div>
+                    <span>Privacy</span>
+                </div>
+            </li>
+        </ul>
+    </div>

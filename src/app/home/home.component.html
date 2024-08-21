@@ -1,0 +1,195 @@
+<app-header></app-header>
+
+<main>
+      
+    <!-- sectio img slider -->
+    <section class="section-slider">
+        <div class="slider-main">
+            <div class="container">
+                <div class="item large">
+                    <div class="slider-container">
+                        <div class="slider" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+                            <div class="slide" *ngFor="let slide of slides">
+                                <img [src]="slide" alt="Slide Image">
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <span *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex"
+                                (click)="goToSlide(i)">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-grid">
+                    <div class="item small top">
+                        <img class="smallImge" src="assets/designersliderimg3.jpeg" alt="">
+                    </div>
+                    <div class="item small bottom">
+                        <img class="smallImge" src="assets/designersliderimg.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section all type produts -->
+    <section>
+        <div class="all-product">
+            <h3>Our All Freash Products </h3>
+        </div>
+
+        <div class="product-type">
+            <div class="product-item">
+                <div class="product-circle">
+                    <div class="product-circle-in">
+                        <img class="smallImge" src="assets/butter.jpeg" alt=""><span>butter</span>
+                    </div>
+                </div>
+                <div class="product-circle">
+                    <div class="product-circle-in">
+                        <img class="smallImge" src="assets/homedairy.jpeg" alt=""><span>Milke</span>
+                    </div>
+                </div>
+                <div class="product-circle">
+                    <div class="product-circle-in">
+                        <img class="smallImge" src="assets/homedairy5.jpeg" alt=""><span>Curd</span>
+                    </div>
+                </div>
+                <div class="product-circle">
+                    <div class="product-circle-in">
+                        <img class="smallImge" src="assets/cookies.jpeg" alt=""><span>Cookies</span>
+                    </div>
+                </div>
+                <div class="product-circle">
+                    <div class="product-circle-in">
+                        <img class="smallImge" src="assets/designersliderimg3.jpeg" alt=""><span>Sweets</span>
+                    </div>
+                </div>
+                <div class="product-circle">
+                    <div class="product-circle-in">
+                        <img class="smallImge" src="assets/designersliderimg.jpeg" alt=""><span>Namkeens</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Product -->
+            <div class="all-product">
+                <h3>Product Shop</h3>
+            </div>
+            <div class="product-offer">
+                <div class="product-circle-offer-offer">
+                    <div class="product-circle-offer-in">
+                        <div class="card">
+                            <img src="assets/homedairy4.jpeg" alt="Denim Jeans" style="width:100%">
+                            <h6>Tailored Jeans</h6>
+                            <p class="price">$19.99</p>
+                            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.</p>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-circle-offer">
+                    <div class="product-circle-offer-in">
+                        <div class="card">
+                            <img src="assets/designersliderimg2.jpeg" alt="Denim Jeans" style="width:100%">
+                            <h6>Tailored Jeans</h6>
+                            <p class="price">$19.99</p>
+                            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.</p>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-circle-offer">
+                    <div class="product-circle-offer-in">
+                        <div class="card">
+                            <img src="assets/Designer.jpeg" alt="Denim Jeans" style="width:100%">
+                            <h6>Tailored Jeans</h6>
+                            <p class="price">$19.99</p>
+                            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.</p>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-circle-offer-offer">
+                    <div class="product-circle-offer-in">
+                        <div class="card">
+                            <img src="assets/homedairy4.jpeg" alt="Denim Jeans" style="width:100%">
+                            <h6>Tailored Jeans</h6>
+                            <p class="price">$19.99</p>
+                            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.</p>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-circle-offer">
+                    <div class="product-circle-offer-in">
+                        <div class="card">
+                            <img src="assets/designersliderimg2.jpeg" alt="Denim Jeans" style="width:100%">
+                            <h6>Tailored Jeans</h6>
+                            <p class="price">$19.99</p>
+                            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.</p>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-circle-offer">
+                    <div class="product-circle-offer-in">
+                        <div class="card">
+                            <img src="assets/Designer.jpeg" alt="Denim Jeans" style="width:100%">
+                            <h6>Tailored Jeans</h6>
+                            <p class="price">$19.99</p>
+                            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.</p>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- by one get free -->
+            <div class="all-product">
+                <h3>Our Offers buy 1 Get 1</h3>
+            </div>
+            <div class="product-offer">
+                <div class="product-circle-offer-offer">
+                    <div class="product-circle-offer-in">
+                        <img class="smallImge" src="assets/homedairy4.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="product-circle-offer">
+                    <div class="product-circle-offer-in">
+                        <img class="smallImge" src="assets/designersliderimg2.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="product-circle-offer">
+                    <div class="product-circle-offer-in">
+                        <img class="smallImge" src="assets/Designer.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section in your city -->
+    <section>
+        <div class="all-product">
+            <h3>Now we are in your city</h3>
+        </div>
+
+        <div class="in-city">
+            <div class="city-location">
+                <img class="smallImge" src="assets/map.png" alt="">
+            </div>
+            <div class="city-address">
+                <div class="card-city">
+                    <h6>44 , Trimurti Nagar</h6>
+                    <p class="price">Nahar Complex </p>
+                    <p>Near Narmada Jhabua Grahmin Bank. Dhar , pin-454001 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<app-footer></app-footer>
