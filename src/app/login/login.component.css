@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+
+
+.skip-button button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
 .wrapper {
   display: flex;
   align-items: center;
